@@ -1,0 +1,15 @@
+program Rectangle;
+
+uses
+  Forms,
+  Unit1 in '..\Новая папка\Unit1.pas' {FormRec},
+  Unit2 in '..\Новая папка\Unit2.pas' {FormEdit};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFormRec, FormRec);
+  Application.CreateForm(TFormEdit, FormEdit);
+  Application.Run;
+end.
